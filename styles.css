@@ -1,0 +1,101 @@
+body {
+  color: #555;
+  margin: 0; /* removes white gaps on the top,left and right side of the header*/
+  font-family: 'Montserrat', sans-serif; /*use of downloaded (@import) font Montserrat and back-up sans-serif*/
+}
+#header {
+  background-color: #1abc9c;
+  height: 150px;
+  line-height: 150px; /*position element whitin header */
+}
+#header a {/*add rule for all <a> elements inside the header section*/
+  color: white;
+  text-decoration: none; /*this rule affects the links in the title and in the navigation*/
+
+  text-transform: uppercase;/*transform the links to uppercase letters*/
+  letter-spacing: 0.1em; /*give the letters some more space*/
+}
+#header a:hover {/*rules for pseudo class for change color of the links when we hover (najazd kursowem nad link) over them*/
+  color: #222;
+}
+#header-title {
+display: block;
+float: left;
+
+font-size: 20px;
+font-weight: bold;
+}
+#header-nav {
+  display: block;
+  float: right;
+  margin-top: 0; /*removes space at the top*/
+}
+#header-nav li { /*list item are easy to get in line*/
+  display: inline;
+  padding-left: 20px; /*space between the list items (About and Contact)*/
+}
+.container { /*rules sets max-width to 1000px and position the element in the horizontal center*/
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#footer {/*the footer won't have fixed height, it'll calculate its height based on the elements within it*/
+  background-color: #2f2f2f;
+  padding: 50px 0;
+}
+#footer h4{/*elements in the footer should be white, in uppercase, and with increased letter spacing*/
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#footer p{ /*paragraph in the footer should be white*/
+  color: white;
+
+}
+.column {/*in order to position the elements of the footer in a single row, we'll use column class*/
+  min-width: 300px;
+  display: inline-block; /*inline-block lets block elements keep their widths and heights, but lines them up in row*/
+  vertical-align: top; /*change that two columns are in line*/
+}
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+a:hover {
+  color: #F6A623;
+}
+.post, .about{ /*position the post*/
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.post-author img, .about-author img {?/*get author picture down to a reasonable size*/
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.post-author span { /* liitle space between the author picture and a name*/
+  margin-left: 16px;
+}
+.post-date {/* post date should be gray, in a smaller font, bold and in uppercase letters*/
+  color: #D2D2D2;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+h1, h2, h3, h4 {/* headlines, no matter how important they are, should be a little darker*/
+  color: #333;
+}
+p {/*lines in paragraphs should get some more space*/
+  line-height: 1.5;
+}
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700); /*import the nicer font for the webpage*/
+.about{
+  text-align: center;
+}
+.post-container:nth-child(even){
+  background-color: lightGray;
+}
